@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Kolokwium.Exceptions;
+﻿using Kolokwium.Exceptions;
 using Kolokwium.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Kolokwium.Controllers
@@ -19,7 +14,7 @@ namespace Kolokwium.Controllers
             _service = service;
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("/championships/{id:int}/teams")]
         public IActionResult GetTeamsAndScores(int id)
         {
             try {

@@ -1,12 +1,10 @@
 ﻿using Kolokwium.DTOs.Request;
 using Kolokwium.Exceptions;
 using Kolokwium.Models;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Kolokwium.Services
 {
